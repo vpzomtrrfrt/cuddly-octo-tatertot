@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+import urllib2, sys, urllib, json, subprocess
+h = urllib2.urlopen('https://ajax.googleapis.com/ajax/services/search/images?'+urllib.urlencode({'v': '1.0', 'q': sys.argv[1]}))
+s = h.read()
+h.close()
+j = json.loads(s)
+u = j["responseData"]["results"][0]["unescapedUrl"]
+subprocess.Popen(["display", "-resize", "600x400>", u])
