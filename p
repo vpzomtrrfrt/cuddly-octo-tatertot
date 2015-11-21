@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 import json, sys, pkmn, re, os.path
 h = open(os.path.dirname(os.path.realpath(__file__))+"/pkmnlist.txt", 'r')
 L = h.readlines()

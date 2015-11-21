@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 import urllib2, sys, random, subprocess
 def run(args):
 	if len(args) > 0:

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python 2
 import json, urllib2, sys, subprocess, os, random
 FNULL = open(os.devnull, 'w')
 base = 'http://dynamic.xkcd.com/api-0/jsonp/comic/'
